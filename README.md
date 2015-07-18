@@ -20,12 +20,14 @@
 * [Convenção sobre Configuração](#convencao-sobre-configuracao)
 * [Estrutura de Pastas](#estrutura-de-pastas)
 * [Estrutura Plugins](#estrutura-plugins)
+
 ---
+
 ### O Curso
 ### Ambiente de Desenvolvimento
 #### IDES
 ##### Sublime
-[![Sublime Logo](https://cdn.tutsplus.com/net/uploads/legacy/2127_projectBliss/images/sublime-logo.jpg)
+[![Sublime Logo](https://raw.githubusercontent.com/visagio/curso-redmine-univisagio/master/imagens/sublime-logo.jpg)
 ](http://www.sublimetext.com/)
 
 O Sublime é um editor de texto poderoso, rápido e multiplataforma. Atualmente está na sua versão 3.0, custando 70 obamas.
