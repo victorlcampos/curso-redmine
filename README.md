@@ -1,2 +1,21 @@
-# curso-redmine-univisagio
-Curso de Redmine dado na Univisagio
+# Curso Redmine - Univisagio
+
+## Ementa
+* [O Curso](#o-curso)
+* [Ambiente de Desenvolvimento](#ambiente-de-desenvolvimento)
+  * [IDEs](#ides)
+    * [Sublime](#sublime)
+    * [Atom](#atom)
+    * [RubyMine](#rubymine)
+  * [Ruby](#ruby)
+    * [Introdução](#ruby-introducao)
+    * [Instalar](#ruby-instalar)
+  * [Rails](#rails)
+    * [Introdução](#rails-introducao)
+    * [Instalar](#rails-instalar)
+  * [Redmine](#redmine)
+    * [Introdução](#redmine-introducao)
+    * [Instalar](#redmine-instalar)
+* [Convenção sobre Configuração](#convencao-sobre-configuracao)
+* [Estrutura de Pastas](#estrutura-de-pastas)
+* [Estrutura Plugins](#estrutura-plugins)
