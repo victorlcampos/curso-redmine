@@ -1,2 +1,2 @@
 # curso-redmine-univisagio
-Curso de Redmine dado na Univsagio
+Curso de Redmine dado na Univisagio
