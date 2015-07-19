@@ -21,10 +21,11 @@
 
 - [Fluxo de Dados](#fluxo-de-dados)
 - [Estrutura de Pastas](#estrutura-de-pastas)
-  - [App](#app)
-  - [Public](#public)
+  - [Subpastas importantes](#subpastas-importantes)
+    - [App](#app)
+    - [Public](#public)
 
-- [Estrutura Plugins](#estrutura-plugins)
+- [Plugins](#estrutura-plugins)
 - [Futuro](#futuro)
 - [Colaboradores](#colaboradores)
 - [Alunos](#alunos)
@@ -295,7 +296,40 @@ Caso ele não encontre o arquivo correspondentes, ele vai buscar na pasta com o 
 ##### Public
 ![](https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/estrutura-public.png)
 
-Na pasta public
+Na pasta public ficam as imagens, javascript e css(pasta stylesheets), nela também ficam os temas do redmine.
+
+O Redmine aceita temas customizados, um tema consiste em um conjunto de css/javascripts e dentro da configuração do Redmine é possível escolher qual tema o usuário vai ver.
+
+O Redmine carrega automaticamente todas as pastas que se encontram dentro da pasta theme e disponibiliza para o administrador escolher qual utilizar.
+
+![](https://raw.githubusercontent.com/victorlcampos/curso-redmine/7daaf9dff1b3ed0c4f7178d7ec93f97343e3f5a3/imagens/themas.png)
+
+O Redmine possui uma lista de themas feitos pela comunidade para você não partir do zero.
+
+[Lista de temas da Comunidade](http://www.redmine.org/projects/redmine/wiki/Theme_List)
+
+### Plugins
+#### Quando devemos desenvolver um plugin?
+Devemos desenvolver um plugin quando:
+1. O redmine não faz o que queremos que ele faça **E**
+2. Não existe um plugin Open Source que faça o que a gente gostaria que o Redmine fizesse.
+
+Se existir um plugin open source que faça parecido, faça um fork do plugin e contribua com ele. Assim todos ganham =).
+
+#### Como criar um plugin
+O Redmine provê um generator para criação da estrutura padrão de um plugin
+
+```sh
+$ rails generate redmine_plugin <plugin_name>
+```
+
+Rodando por exemplo:
+
+```sh
+$ rails generate redmine_plugin pull
+```
+
+Ele irá criar dentro da pasta plugins:
 
 ### Futuro
 A ideia de desenvolver o curso no github é deixar ele colaborativo e expansível, assim como o Redmine. Gerando assim uma apostila completa sobre o assunto, que se mantenha sempre atualizada.
