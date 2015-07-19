@@ -6,25 +6,20 @@
     - [Sublime](#sublime)
     - [Atom](#atom)
     - [RubyMine](#rubymine)
-
   - [Ruby](#ruby)
     - [Introdução](#ruby-introducao)
     - [Instalar](#ruby-instalar)
-
   - [Rails](#rails)
     - [Introdução](#rails-introducao)
     - [Instalar](#rails-instalar)
-
   - [Redmine](#redmine)
     - [Introdução](#redmine-introducao)
     - [Instalar](#redmine-instalar)
-
 - [Fluxo de Dados](#fluxo-de-dados)
 - [Estrutura de Pastas](#estrutura-de-pastas)
   - [Subpastas importantes](#subpastas-importantes)
     - [App](#app)
     - [Public](#public)
-
 - [Plugins](#estrutura-plugins)
 - [Futuro](#futuro)
 - [Colaboradores](#colaboradores)
@@ -237,49 +232,37 @@ A primeira coisa para se entender como programar utilizando Ruby on Rails é ent
 Quando um request chega ele segue o fluxo:
 - Tenta encaixar a url do request em algum partner cadastrado nos arquivos de rotas.
   - Podemos verificar todas as rotas cadastradas rodando o comando  "_rake routes_" no terminal
-
 - O arquivo de rotas dira para o Rails qual o controller ele deve chamar e qual action ele deve executar.
   - Uma action é o nome de um método de um controller
-
 - Uma action pode redirectionar para outra action ou renderizar uma view.
   - Por padrão o Rails renderiza a view com o mesmo nome da action dentro da pasta com o mesmo nome do controller. **(Convenção sobre Configuração)**
-
 - A view encherga as variáveis de instâncias(@) do controller
 
 Entender e praticar esse fluxo é de extrema importância para saber encontrar o que você deseja modificar no Redmine e saber em qual parte do código está dando erro. Com o tempo você perceberá que as coisas estão onde devem estar.
 
 ### Estrutura de Pastas
 ![](https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/estrutura-pastas.png)
+
 - app
   - Pasta onde ficam os arquivos da aplicação como models, controllers, views, etc
-
 - config
   - Pasta onde ficam os arquivos de configuração de banco, ambiente, **rotas**, locales
-
 - db
   - Pasta onde se encontra as migrações do banco
-
 - doc
   - Pasta para guardar as documentações da aplicação
-
 - extra
   - Pasta com exemplo de plugin
-
 - files
   - Pasta onde o Redmine guarda os arquivos anexados
-
 - lib
   - Pasta onde ficam as bibliotecas de código desenvolvida, como rake taskes, patches, etc
-
 - plugins
   - Pasta onde ficam guardados os plugins desenvolvidos para o Redmine, é aqui onde faremos 90% do desenvolvimento
-
 - public
   - Pasta onde ficam os arquivos estáticos servidos pelo webserver
-
 - script
   - Contêm o script para inicialização do rails
-
 - test
   - Pasta com os testes automatizados do Redmine
 
@@ -310,7 +293,9 @@ O Redmine possui uma lista de themas feitos pela comunidade para você não part
 
 ### Plugins
 #### Quando devemos desenvolver um plugin?
+
 Devemos desenvolver um plugin quando:
+
 1. O redmine não faz o que queremos que ele faça **E**
 2. Não existe um plugin Open Source que faça o que a gente gostaria que o Redmine fizesse.
 
@@ -330,6 +315,28 @@ $ rails generate redmine_plugin pull
 ```
 
 Ele irá criar dentro da pasta plugins:
+
+![](https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/pasta-plugins.png)
+
+Reparem, ele criou uma estrutura muito parecida com a estrutura do próprio redmine, de diferente temos:
+
+* assets
+  * Nessa pasta ficarão as imagens, javascript e css do plugin. O Redmine ao iniciar irá pegar esses arquivos e colocar na pasta plugin_assets dentro da pasta public
+
+Editando o init.rb veremos
+
+```rb
+  Redmine::Plugin.register :pull do
+    name 'Pull plugin'
+    author 'Author name'
+    description 'This is a plugin for Redmine'
+    version '0.0.1'
+    url 'http://example.com/path/to/plugin'
+    author_url 'http://example.com/about'
+  end
+```
+
+Aqui teremos
 
 ### Futuro
 A ideia de desenvolver o curso no github é deixar ele colaborativo e expansível, assim como o Redmine. Gerando assim uma apostila completa sobre o assunto, que se mantenha sempre atualizada.
