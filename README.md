@@ -1,6 +1,4 @@
-![](https://raw.githubusercontent.com/visagio/curso-redmine-univisagio/master/imagens/univisagio.png)
-
-# Curso Redmine - Univisagio
+# Curso Redmine
 ## Ementa
 - [O Curso](#o-curso)
 - [Ambiente de Desenvolvimento](#ambiente-de-desenvolvimento)
@@ -24,18 +22,21 @@
 - [Fluxo de Dados](#fluxo-de-dados)
 - [Estrutura de Pastas](#estrutura-de-pastas)
 - [Estrutura Plugins](#estrutura-plugins)
+- [Futuro](#futuro)
+- [Colaboradores](#colaboradores)
+- [Alunos](#alunos)
 
 --------------------------------------------------------------------------------
 
 ### O Curso
-Neste curso teremos uma introdução do desenvolvimento de plugins para Redmine 2.6. Com foco na teoria e técnicas de programação da framework Rails e como se aplica ao Redmine.
+Neste curso veremos como desenvolver plugins para Redmine 2.6. Com foco na teoria e técnicas de programação da framework Rails e como se aplica ao Redmine.
 
 <sub><sup>Não é um curso de Ruby on Rails</sup></sub>
 
 ### Ambiente de Desenvolvimento
 #### IDES
 ##### Sublime
-[![Sublime Logo](https://raw.githubusercontent.com/visagio/curso-redmine-univisagio/master/imagens/sublime-logo.png) ](http://www.sublimetext.com/)
+[![Sublime Logo](https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/sublime-logo.png) ](http://www.sublimetext.com/)
 
 O Sublime é um editor de texto poderoso, rápido e multiplataforma. Atualmente está na sua versão 3.0, custando 70 obamas.
 
@@ -134,6 +135,8 @@ $ rvm use 1.9.3 --default
 
 O Redmine 2.6 usa o ruby 1.9.3, por isso instalamos ele.
 
+<sub><sub>Enquanto escrevia esse curso, verifiquei que na vesão [2.6.6](http://www.redmine.org/issues/19652) o Redmine passou a suportar o Ruby 2.2, mas como ainda não tive tempo de testar, vou seguir com a 1.9.3</sub><sub>
+
 #### Rails
 ##### Introdução
 ![](http://rubyonrails.org/images/rails.png)
@@ -155,4 +158,100 @@ Vamos instalar a versão 3.2 do rails pois é a última compatível com o redmin
 
 #### Redmine
 ##### Introdução
+![](http://www.redmine.org/attachments/3458/redmine_logo_v1.png)
+
+O Redmine é um gerenciador de projeto **muito** flexível, extensível e configurável. Como o código é aberto, conseguimos utiliza-lo para atender as mais variádas demandas dos clientes. As principais features nativas são:
+- Multiple projects support
+- Flexible role based access control
+- Flexible issue tracking system
+- Gantt chart and calendar
+- News, documents & files management
+- Feeds & email notifications
+- Per project wiki
+- Per project forums
+- Time tracking
+- Custom fields for issues, time-entries, projects and users
+- SCM integration (SVN, CVS, Git, Mercurial, Bazaar and Darcs)
+- Issue creation via email
+- Multiple LDAP authentication support
+- User self-registration support
+- Multilanguage support
+- Multiple databases support
+
 ##### Instalar
+Para instalar o Redmine, vamos utilizar a última versão estável do redmine 2.6, que no momento de criação desse curso era a 2.6.6
+
+```sh
+$ svn co https://svn.redmine.org/redmine/branches/2.6.6-stable redmine-2.6.6
+
+$ cd redmine-2.6.6
+```
+
+Tendo o código do redmine, precisamos configurar o arquivo do banco de dados e o arquivo de configuração de e-mail. Por enquanto vamos utilizar o examplo do próprio redmine.
+
+```sh
+$ cp ./config/database.yml{.example,}
+$ cp ./config/configuration.yml{.example,}
+```
+
+Assim como no Java temos o Maven para baixar as dependências, no Ruby temos o Bundle, para utiliza-lo basta fazer:
+
+```sh
+$ bundle install
+```
+
+Ele irá olhar o arquivo Gemfile, na pasta raiz do projeto e instalar todas as dependências que lá estiver.
+
+> O Bundle faz tudo que o Maven faz?
+
+**NÃO**, ele, diferente do Maven, se foca em fazer bem uma única coisa: gerênciar dependências.
+
+Para automatizar tarefas, temos o **rake**, vamos utilizar para gerar o token de segurança de sessão.
+
+```sh
+$ rake generate_secret_token
+```
+
+Também precisamos gerar as tebelas do banco de dados que o redmine usa. O Rails por padrão possui migrações, arquivos em ruby(.rb) que descreve as operações que devemos realizar no banco.
+
+Podemos com o rake rodar todas essas migrações e o Rails se encarrega de transformar no sql certo para o banco descrito no database.yml
+
+```sh
+$ rake db:create
+$ rake db:migrate
+```
+
+Pronto, agora estamos pronto para rodar o Redmine
+
+```sh
+$ rails server
+```
+
+### Fluxo de Dados
+A primeira coisa para se entender como programar utilizando Ruby on Rails é entender o fluxo de dados.
+
+Quando um request chega ele segue o fluxo:
+- Tenta encaixar a url do request em algum partner cadastrado nos arquivos de rotas.
+  - Podemos verificar todas as rotas cadastradas rodando o comando  "_rake routes_" no terminal
+
+- O arquivo de rotas dira para o Rails qual o controller ele deve chamar e qual action ele deve executar.
+  - Uma action é o nome de um método de um controller
+
+- Uma action pode redirectionar para outra action ou renderizar uma view.
+  - Por padrão o Rails renderiza a view com o mesmo nome da action dentro da pasta com o mesmo nome do controller. **(Convenção sobre Configuração)**
+
+- A view encherga as variáveis de instâncias(@) do controller
+
+Entender e praticar esse fluxo é de extrema importância para saber encontrar o que você deseja modificar no Redmine e saber em qual parte do código está dando erro. Com o tempo você perceberá que as coisas estão onde devem estar.
+
+### Estrutura de Pastas
+### Futuro
+A ideia de desenvolver o curso no github é deixar ele colaborativo e expansível, assim como o Redmine. Gerando assim uma apostila completa sobre o assunto, que se mantenha sempre atualizada.
+
+### Colaboradores
+Quem contribuir com esse material, pesso que mande um pull request adicionado o seu nome na lista abaixo.
+- Victor Lima Campos(victorlcampos)
+
+### Alunos
+Quem utilizar esse material para estudo, pesso que mande um pull request adicionado o seu nome na lista abaixo.
+- Victor Lima Campos(victorlcampos)
