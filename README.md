@@ -24,6 +24,8 @@
 ---
 
 ### O Curso
+Neste curso teremos uma introdução do desenvolvimento de plugins para Redmine 2.6. Com foco na teoria e técnicas de programação da framework Rails e como se aplica ao Redmine. *Não sendo um curso de Ruby on Rails*
+
 ### Ambiente de Desenvolvimento
 #### IDES
 ##### Sublime
