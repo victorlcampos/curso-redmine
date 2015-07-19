@@ -295,6 +295,8 @@ Caso ele não encontre o arquivo correspondentes, ele vai buscar na pasta com o 
 ##### Public
 ![](https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/estrutura-public.png)
 
+Na pasta public
+
 ### Futuro
 A ideia de desenvolver o curso no github é deixar ele colaborativo e expansível, assim como o Redmine. Gerando assim uma apostila completa sobre o assunto, que se mantenha sempre atualizada.
 
