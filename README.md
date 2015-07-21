@@ -7,20 +7,38 @@
     - [Atom](#atom)
     - [RubyMine](#rubymine)
   - [Ruby](#ruby)
-    - [Introdução](#ruby-introducao)
-    - [Instalar](#ruby-instalar)
+    - [Introdução](#introdução)
+    - [Instalar](#instalar)
   - [Rails](#rails)
-    - [Introdução](#rails-introducao)
-    - [Instalar](#rails-instalar)
+    - [Introdução](#introdução-1)
+    - [Instalar](#instalar-1)
   - [Redmine](#redmine)
-    - [Introdução](#redmine-introducao)
-    - [Instalar](#redmine-instalar)
+    - [Introdução](#introdução-2)
+    - [Instalar](#instalar-2)
 - [Fluxo de Dados](#fluxo-de-dados)
 - [Estrutura de Pastas](#estrutura-de-pastas)
   - [Subpastas importantes](#subpastas-importantes)
     - [App](#app)
     - [Public](#public)
 - [Plugins](#estrutura-plugins)
+  - [Quando devemos desenvolver um plugin?](#quando-devemos-desenvolver-um-plugin)
+  - [Como criar um plugin](#como-criar-um-plugin)
+  - [Criando um modelo](#criando-um-modelo)
+  - [Criando um Controller](#criando-um-controller)
+  - [Adicionando rota](#adicionando-rota)
+  - [Adicionando um link no menu](#adicionando-um-link-no-menu)
+  - [Internacionalização](#internacionalização)
+  - [Criando uma View](#criando-uma-view)
+  - [Assets](#assets)
+  - [Permissões](#permissões)
+  - [Módulos](#módulos)
+  - [Hooks](#hooks)
+    - [Hooks nas Views](#hooks-nas-views)
+    - [Hooks nos Controllers](#hooks-nos-controllers)
+    - [Fazendo um plugin ser configurável](#fazendo-um-plugin-ser-configurável)
+    - [Sobrescrevendo um Modelo](#sobrescrevendo-um-modelo)
+    - [Sobrescrevendo um Controller](#sobrescrevendo-um-controller)
+    - [Sobrescrevendo uma View](#sobrescrevendo-um-modelo)
 - [Futuro](#futuro)
 - [Colaboradores](#colaboradores)
 - [Alunos](#alunos)
@@ -597,7 +615,7 @@ Caso a opção caption não seja passada, **e ela não deve ser**, o redmine usa
 
 Para saber mais sobre internacionalização no rails: http://guides.rubyonrails.org/i18n.html
 
-#### Views
+#### Criando uma View
 
 Agora que já temos uma rota, um controller e um botão que o usuário pode clicar para acessar nosso controller, precisamos codificar o que o usuário vai ver quando acessar nossa action. Como falado anteriormente o Rails vai procurar dentro da pasta com o mesmo nome do controller, _polls_, uma view com o mesmo nome da action, _index_.
 
