@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso-redmine by victorlcampos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Curso-redmine</h1>
+      <h2 class="project-tagline">Curso de Redmine</h2>
+      <a href="https://github.com/victorlcampos/curso-redmine" class="btn">View on GitHub</a>
+      <a href="https://github.com/victorlcampos/curso-redmine/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/victorlcampos/curso-redmine/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="curso-redmine" class="anchor" href="#curso-redmine" aria-hidden="true"><span class="octicon octicon-link"></span></a>Curso Redmine</h1>
+
+<h2>
+<a id="ementa" class="anchor" href="#ementa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ementa</h2>
+
+<ul>
+<li><a href="#o-curso">O Curso</a></li>
+<li>
+<a href="#ambiente-de-desenvolvimento">Ambiente de Desenvolvimento</a>
+
+<ul>
+<li>
+<a href="#ides">IDEs</a>
+
+<ul>
+<li><a href="#sublime">Sublime</a></li>
+<li><a href="#atom">Atom</a></li>
+<li><a href="#rubymine">RubyMine</a></li>
+</ul>
+</li>
+<li>
+<a href="#ruby">Ruby</a>
+
+<ul>
+<li><a href="#introdu%C3%A7%C3%A3o">Introdução</a></li>
+<li><a href="#instalar">Instalar</a></li>
+</ul>
+</li>
+<li>
+<a href="#rails">Rails</a>
+
+<ul>
+<li><a href="#introdu%C3%A7%C3%A3o-1">Introdução</a></li>
+<li><a href="#instalar-1">Instalar</a></li>
+</ul>
+</li>
+<li>
+<a href="#redmine">Redmine</a>
+
+<ul>
+<li><a href="#introdu%C3%A7%C3%A3o-2">Introdução</a></li>
+<li><a href="#instalar-2">Instalar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#fluxo-de-dados">Fluxo de Dados</a></li>
+<li>
+<a href="#estrutura-de-pastas">Estrutura de Pastas</a>
+
+<ul>
+<li>
+<a href="#subpastas-importantes">Subpastas importantes</a>
+
+<ul>
+<li><a href="#app">App</a></li>
+<li><a href="#public">Public</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#estrutura-plugins">Plugins</a>
+
+<ul>
+<li><a href="#quando-devemos-desenvolver-um-plugin">Quando devemos desenvolver um plugin?</a></li>
+<li><a href="#como-criar-um-plugin">Como criar um plugin</a></li>
+<li><a href="#criando-um-modelo">Criando um modelo</a></li>
+<li><a href="#criando-um-controller">Criando um Controller</a></li>
+<li><a href="#adicionando-rota">Adicionando rota</a></li>
+<li><a href="#adicionando-um-link-no-menu">Adicionando um link no menu</a></li>
+<li><a href="#internacionaliza%C3%A7%C3%A3o">Internacionalização</a></li>
+<li><a href="#criando-uma-view">Criando uma View</a></li>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#permiss%C3%B5es">Permissões</a></li>
+<li><a href="#m%C3%B3dulos">Módulos</a></li>
+<li>
+<a href="#hooks">Hooks</a>
+
+<ul>
+<li><a href="#hooks-nas-views">Hooks nas Views</a></li>
+<li><a href="#hooks-nos-controllers">Hooks nos Controllers</a></li>
+<li><a href="#fazendo-um-plugin-ser-configur%C3%A1vel">Fazendo um plugin ser configurável</a></li>
+<li><a href="#sobrescrevendo-um-modelo">Sobrescrevendo um Modelo</a></li>
+<li><a href="#sobrescrevendo-um-controller">Sobrescrevendo um Controller</a></li>
+<li><a href="#sobrescrevendo-um-modelo">Sobrescrevendo uma View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#futuro">Futuro</a></li>
+<li><a href="#colaboradores">Colaboradores</a></li>
+<li><a href="#alunos">Alunos</a></li>
+</ul>
+
+<hr>
+
+<h3>
+<a id="o-curso" class="anchor" href="#o-curso" aria-hidden="true"><span class="octicon octicon-link"></span></a>O Curso</h3>
+
+<p>Neste curso veremos como desenvolver plugins para Redmine 2.6. Com foco na teoria e técnicas de programação da framework Rails e como se aplica ao Redmine.</p>
+
+<p><sub><sup>Não é um curso de Ruby on Rails</sup></sub></p>
+
+<h3>
+<a id="ambiente-de-desenvolvimento" class="anchor" href="#ambiente-de-desenvolvimento" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ambiente de Desenvolvimento</h3>
+
+<h4>
+<a id="ides" class="anchor" href="#ides" aria-hidden="true"><span class="octicon octicon-link"></span></a>IDES</h4>
+
+<h5>
+<a id="sublime" class="anchor" href="#sublime" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sublime</h5>
+
+<p><a href="http://www.sublimetext.com/"><img src="https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/sublime-logo.png" alt="Sublime Logo"> </a></p>
+
+<p>O Sublime é um editor de texto poderoso, rápido e multiplataforma. Atualmente está na sua versão 3.0, custando 70 obamas.</p>
+
+<h5>
+<a id="atom" class="anchor" href="#atom" aria-hidden="true"><span class="octicon octicon-link"></span></a>Atom</h5>
+
+<p><a href="https://atom.io/"><img src="https://cloud.githubusercontent.com/assets/72919/2874231/3af1db48-d3dd-11e3-98dc-6066f8bc766f.png" alt="Atom s2s2"> </a></p>
+
+<p>Atom é sem dúvida a minha recomendação para quem quer seguir com desenvolvimento ruby. Um editor estável, open source e desenvolvido/mantido pelo próprio GitHub.</p>
+
+<p>Poderia passar horas falando o porque eu gosto do atom, mas não é o foco do curso.</p>
+
+<h5>
+<a id="rubymine" class="anchor" href="#rubymine" aria-hidden="true"><span class="octicon octicon-link"></span></a>RubyMine</h5>
+
+<p><a href="https://www.jetbrains.com/ruby/"><img src="https://confluence.jetbrains.com/download/attachments/20238/RM_logo.gif?version=1&amp;modificationDate=1373554086000" alt="Ruby Mine $$"></a></p>
+
+<p>Como escrito no próprio site da JetBrain, a IDE de ruby mais inteligente. Porque não uso? Primeiro, porque acredito que IDE traga mais distrações do que o benefícios, segundo porque demora mais tempo para iniciar que o Atom, terceiro porque custa 199 obamas no primeiro ano e 99 para renovar a licença. E não acho que esse valor se pague.</p>
+
+<p>Mas se você é desenvolvedor Java e não consegue viver sem autocomplete, vale a pena testar os 30 dias de trial.</p>
+
+<p><sub><sup>PS: Não citei o eclipse porque era bem ruim quando usei para ruby(a uns 2 anos atrás) e nunca mais voltei, mas se você quiser testar, fique a vontade.</sup></sub></p>
+
+<h4>
+<a id="ruby" class="anchor" href="#ruby" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ruby</h4>
+
+<h5>
+<a id="introdução" class="anchor" href="#introdu%C3%A7%C3%A3o" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introdução</h5>
+
+<p><img src="http://iwanttolearnruby.com/images/ruby-style-guide.gif" alt=""></p>
+
+<p>Ruby é uma linguagem de programação de 1995 onde <sub><sup>quase</sup></sub> tudo é um objeto. Uma linguagem moderna, possuindo tipos dinâmicos, lambda function e altamente influenciada por programação funcional.</p>
+
+<p>Diferente do Java onde o tipo é explícito, em Ruby a tipagem é conhecida como Duck Typing, se um argumento tem todos os métodos que o método precisa para usá-lo, o método vai aceita-lo como argumento. O que não significa que a variável não tenha tipo, todo objeto tem o método .class, que retorna a classe que ele pertence.</p>
+
+<p>Outra diferença com o Java é que as classes em Ruby são abertas, mas o que isso significa? Significa que após declarar uma classe, você pode abri-la novamente e altera-la. Continuou sem entender? Vamos para o Exemplo:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">A</span>
+  <span class="pl-k">def</span> <span class="pl-en">a</span>
+    print <span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+obj <span class="pl-k">=</span> <span class="pl-c1">A</span>.<span class="pl-k">new</span>
+obj.a
+=&gt; a
+
+<span class="pl-k">class</span> <span class="pl-en">A</span>
+  <span class="pl-k">def</span> <span class="pl-en">b</span>
+    print <span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+obj <span class="pl-k">=</span> <span class="pl-c1">A</span>.<span class="pl-k">new</span>
+obj.a
+=&gt; a
+obj.b
+=&gt; b</pre></div>
+
+<p>Depois de declarar a classe A pela segunda vez, quando iniciei um novo objeto dessa classe, ele passou a ter ambos os métodos. Mas o que ocorreria se eu tivesse declarado o mesmo método novamente?</p>
+
+<div class="highlight highlight-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">A</span>
+  <span class="pl-k">def</span> <span class="pl-en">a</span>
+    print <span class="pl-s"><span class="pl-pds">'</span>novo a<span class="pl-pds">'</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+obj <span class="pl-k">=</span> <span class="pl-c1">A</span>.<span class="pl-k">new</span>
+obj.a
+=&gt; novo a
+obj.b
+=&gt; b</pre></div>
+
+<p>Se o mesmo método for declarado duas vezes, a última declaração passa a valer. Essa característica da linguagem, evita as milhões de classe Utils que criamos no Java e facilita a criação de plugins.</p>
+
+<p>E como ruby é altamente influenciada por programação funcinal, toda função tem um retorno, não existe função void em Ruby.</p>
+
+<h5>
+<a id="instalar" class="anchor" href="#instalar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalar</h5>
+
+<p><img src="https://rvm.io/images/rvm-logo-all-happy.png" alt=""></p>
+
+<p>Para instalar o Ruby no Linux <strong>(Usem LINUX)</strong>, vamos utilizar um gerenciador de versão do Ruby para conseguirmos ter mais de uma versão rodando na mesma máquina.</p>
+
+<p>Os dois gerênciadores mais famosos são o rbenv e o rvm. Para esse curso vamos utilizar o rvm.</p>
+
+<p><sub><sup>Escolha baseada em gosto pessoal, se quiserem se aventurar no rbenv ele também é muito bom.</sup></sub></p>
+
+<div class="highlight highlight-sh"><pre>$ apt-get update
+$ apt-get install -y subversion git telnet
+$ apt-get install apt-get install -y libmysqlclient-dev freetds-dev imagemagick libmagickcore-dev libmagickwand-dev libcurl4-openssl-dev apache2-threaded-dev libapr1-dev libaprutil1-dev curl
+
+$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+$ <span class="pl-cce">\c</span>url -sSL https://get.rvm.io <span class="pl-k">|</span> bash -s stable
+
+$ rvm requirements
+$ rvm install 1.9.3
+$ rvm use 1.9.3 --default</pre></div>
+
+<p>O Redmine 2.6 usa o ruby 1.9.3, por isso instalamos ele.</p>
+
+<p><sub><sub>Enquanto escrevia esse curso, verifiquei que na vesão <a href="http://www.redmine.org/issues/19652">2.6.6</a> o Redmine passou a suportar o Ruby 2.2, mas como ainda não tive tempo de testar, vou seguir com a 1.9.3</sub><sub></sub></sub></p>
+
+<h4>
+<a id="rails" class="anchor" href="#rails" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rails</h4>
+
+<h5>
+<a id="introdução-1" class="anchor" href="#introdu%C3%A7%C3%A3o-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introdução</h5>
+
+<p><img src="http://rubyonrails.org/images/rails.png" alt=""></p>
+
+<p>O Rails é uma framework MVC baseado em dois princípios básicos que você deve <strong>SEMPRE</strong> seguir, Convenção sobre Configuração e o Dry(Don't repeat yourself).</p>
+
+<p>Atualmente se encontra na versão 4.2.3, mas no redmine 2.6 utilizaremos a 3.2.</p>
+
+<h5>
+<a id="instalar-1" class="anchor" href="#instalar-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalar</h5>
+
+<p><img src="https://rubygems.org/favicon.ico" alt=""></p>
+
+<p>Podemos instalar o rails utilizando o RubyGem, uma gem seria o equivalente do jar no Java. O RubyGem é um instalador de <em>gems</em> que já é instalado junto com o ruby pelo rvm, ele funciona parecido com o apt-get do ububtu.</p>
+
+<div class="highlight highlight-sh"><pre>$ sudo gem install rails -v 3.2.x</pre></div>
+
+<p>Vamos instalar a versão 3.2 do rails pois é a última compatível com o redmine 2.6</p>
+
+<h4>
+<a id="redmine" class="anchor" href="#redmine" aria-hidden="true"><span class="octicon octicon-link"></span></a>Redmine</h4>
+
+<h5>
+<a id="introdução-2" class="anchor" href="#introdu%C3%A7%C3%A3o-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introdução</h5>
+
+<p><img src="http://www.redmine.org/attachments/3458/redmine_logo_v1.png" alt=""></p>
+
+<p>O Redmine é um gerenciador de projeto <strong>muito</strong> flexível, extensível e configurável. Como o código é aberto, conseguimos utiliza-lo para atender as mais variádas demandas dos clientes. As principais features nativas são:</p>
+
+<ul>
+<li>Multiple projects support</li>
+<li>Flexible role based access control</li>
+<li>Flexible issue tracking system</li>
+<li>Gantt chart and calendar</li>
+<li>News, documents &amp; files management</li>
+<li>Feeds &amp; email notifications</li>
+<li>Per project wiki</li>
+<li>Per project forums</li>
+<li>Time tracking</li>
+<li>Custom fields for issues, time-entries, projects and users</li>
+<li>SCM integration (SVN, CVS, Git, Mercurial, Bazaar and Darcs)</li>
+<li>Issue creation via email</li>
+<li>Multiple LDAP authentication support</li>
+<li>User self-registration support</li>
+<li>Multilanguage support</li>
+<li>Multiple databases support</li>
+</ul>
+
+<h5>
+<a id="instalar-2" class="anchor" href="#instalar-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalar</h5>
+
+<p>Para instalar o Redmine, vamos utilizar a última versão estável do redmine 2.6, que no momento de criação desse curso era a 2.6.6</p>
+
+<div class="highlight highlight-sh"><pre>$ svn co https://svn.redmine.org/redmine/branches/2.6.6-stable redmine-2.6.6
+
+$ <span class="pl-c1">cd</span> redmine-2.6.6</pre></div>
+
+<p>Tendo o código do redmine, precisamos configurar o arquivo do banco de dados e o arquivo de configuração de e-mail. Por enquanto vamos utilizar o examplo do próprio redmine.</p>
+
+<div class="highlight highlight-sh"><pre>$ cp ./config/database.yml{.example,}
+$ cp ./config/configuration.yml{.example,}</pre></div>
+
+<p>Assim como no Java temos o Maven para baixar as dependências, no Ruby temos o Bundle, para utiliza-lo basta fazer:</p>
+
+<div class="highlight highlight-sh"><pre>$ bundle install</pre></div>
+
+<p>Ele irá olhar o arquivo Gemfile, na pasta raiz do projeto e instalar todas as dependências que lá estiver.</p>
+
+<blockquote>
+<p>O Bundle faz tudo que o Maven faz?</p>
+</blockquote>
+
+<p><strong>NÃO</strong>, ele, diferente do Maven, se foca em fazer bem uma única coisa: gerênciar dependências.</p>
+
+<p>Para automatizar tarefas, temos o <strong>rake</strong>, vamos utilizar para gerar o token de segurança de sessão.</p>
+
+<div class="highlight highlight-sh"><pre>$ rake generate_secret_token</pre></div>
+
+<p>Também precisamos gerar as tebelas do banco de dados que o redmine usa. O Rails por padrão possui migrações, arquivos em ruby(.rb) que descreve as operações que devemos realizar no banco.</p>
+
+<p>Podemos com o rake rodar todas essas migrações e o Rails se encarrega de transformar no sql certo para o banco descrito no database.yml</p>
+
+<div class="highlight highlight-sh"><pre>$ rake db:create
+$ rake db:migrate</pre></div>
+
+<p>Pronto, agora estamos pronto para rodar o Redmine</p>
+
+<div class="highlight highlight-sh"><pre>$ rails server</pre></div>
+
+<h3>
+<a id="fluxo-de-dados" class="anchor" href="#fluxo-de-dados" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fluxo de Dados</h3>
+
+<p>A primeira coisa para se entender como programar utilizando Ruby on Rails é entender o fluxo de dados.</p>
+
+<p>Quando um request chega ele segue o fluxo:</p>
+
+<ul>
+<li>Tenta encaixar a url do request em algum partner cadastrado nos arquivos de rotas.
+
+<ul>
+<li>Podemos verificar todas as rotas cadastradas rodando o comando  "<em>rake routes</em>" no terminal</li>
+</ul>
+</li>
+<li>O arquivo de rotas dira para o Rails qual o controller ele deve chamar e qual action ele deve executar.
+
+<ul>
+<li>Uma action é o nome de um método de um controller</li>
+</ul>
+</li>
+<li>Uma action pode redirectionar para outra action ou renderizar uma view.
+
+<ul>
+<li>Por padrão o Rails renderiza a view com o mesmo nome da action dentro da pasta com o mesmo nome do controller. <strong>(Convenção sobre Configuração)</strong>
+</li>
+</ul>
+</li>
+<li>A view encherga as variáveis de instâncias(@) do controller</li>
+</ul>
+
+<p>Entender e praticar esse fluxo é de extrema importância para saber encontrar o que você deseja modificar no Redmine e saber em qual parte do código está dando erro. Com o tempo você perceberá que as coisas estão onde devem estar.</p>
+
+<h3>
+<a id="estrutura-de-pastas" class="anchor" href="#estrutura-de-pastas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Estrutura de Pastas</h3>
+
+<p><img src="https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/estrutura-pastas.png" alt=""></p>
+
+<ul>
+<li>app
+
+<ul>
+<li>Pasta onde ficam os arquivos da aplicação como models, controllers, views, etc</li>
+</ul>
+</li>
+<li>config
+
+<ul>
+<li>Pasta onde ficam os arquivos de configuração de banco, ambiente, <strong>rotas</strong>, locales</li>
+</ul>
+</li>
+<li>db
+
+<ul>
+<li>Pasta onde se encontra as migrações do banco</li>
+</ul>
+</li>
+<li>doc
+
+<ul>
+<li>Pasta para guardar as documentações da aplicação</li>
+</ul>
+</li>
+<li>extra
+
+<ul>
+<li>Pasta com exemplo de plugin</li>
+</ul>
+</li>
+<li>files
+
+<ul>
+<li>Pasta onde o Redmine guarda os arquivos anexados</li>
+</ul>
+</li>
+<li>lib
+
+<ul>
+<li>Pasta onde ficam as bibliotecas de código desenvolvida, como rake taskes, patches, etc</li>
+</ul>
+</li>
+<li>plugins
+
+<ul>
+<li>Pasta onde ficam guardados os plugins desenvolvidos para o Redmine, é aqui onde faremos 90% do desenvolvimento</li>
+</ul>
+</li>
+<li>public
+
+<ul>
+<li>Pasta onde ficam os arquivos estáticos servidos pelo webserver</li>
+</ul>
+</li>
+<li>script
+
+<ul>
+<li>Contêm o script para inicialização do rails</li>
+</ul>
+</li>
+<li>test
+
+<ul>
+<li>Pasta com os testes automatizados do Redmine</li>
+</ul>
+</li>
+</ul>
+
+<h4>
+<a id="subpastas-importantes" class="anchor" href="#subpastas-importantes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Subpastas importantes</h4>
+
+<h5>
+<a id="app" class="anchor" href="#app" aria-hidden="true"><span class="octicon octicon-link"></span></a>App</h5>
+
+<p><img src="https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/estrutura-app.png" alt=""></p>
+
+<p>Como mencionado a pasta app contêm os controllers, models e views, mas em qual subpasta eles ficam? Bom, vou deixar você, caro leitor, descobrir sozinho.</p>
+
+<p>Descobriu? Ótimo, agora vamos olhar para as views. As views possuem também subpastas, cada uma delas com o mesmo nome do controller. Assim o rails sabe qual view renderizar quando uma action for chamada. Ele vai dentro da <strong>pasta view &gt; nome_controller &gt; nome_action.{html, js, xml, etcc}.erb</strong>.</p>
+
+<p>Caso ele não encontre o arquivo correspondentes, ele vai buscar na pasta com o mesmo nome da superclasse do controller e assim sucessivamente. Caso ele por fim não encontre, a página 404 do public é renderizada.</p>
+
+<h5>
+<a id="public" class="anchor" href="#public" aria-hidden="true"><span class="octicon octicon-link"></span></a>Public</h5>
+
+<p><img src="https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/estrutura-public.png" alt=""></p>
+
+<p>Na pasta public ficam as imagens, javascript e css(pasta stylesheets), nela também ficam os temas do redmine.</p>
+
+<p>O Redmine aceita temas customizados, um tema consiste em um conjunto de css/javascripts e dentro da configuração do Redmine é possível escolher qual tema o usuário vai ver.</p>
+
+<p>O Redmine carrega automaticamente todas as pastas que se encontram dentro da pasta theme e disponibiliza para o administrador escolher qual utilizar.</p>
+
+<p><img src="https://raw.githubusercontent.com/victorlcampos/curso-redmine/7daaf9dff1b3ed0c4f7178d7ec93f97343e3f5a3/imagens/themas.png" alt=""></p>
+
+<p>O Redmine possui uma lista de themas feitos pela comunidade para você não partir do zero.</p>
+
+<p><a href="http://www.redmine.org/projects/redmine/wiki/Theme_List">Lista de temas da Comunidade</a></p>
+
+<h3>
+<a id="plugins" class="anchor" href="#plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugins</h3>
+
+<h4>
+<a id="quando-devemos-desenvolver-um-plugin" class="anchor" href="#quando-devemos-desenvolver-um-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quando devemos desenvolver um plugin?</h4>
+
+<p>Devemos desenvolver um plugin quando:</p>
+
+<ol>
+<li>O redmine não faz o que queremos que ele faça <strong>E</strong>
+</li>
+<li>Não existe um plugin Open Source que faça o que a gente gostaria que o Redmine fizesse.</li>
+</ol>
+
+<p>Se existir um plugin open source que faça parecido, faça um fork do plugin e contribua com ele. Assim todos ganham =).</p>
+
+<h4>
+<a id="como-criar-um-plugin" class="anchor" href="#como-criar-um-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Como criar um plugin</h4>
+
+<p>O Redmine provê um generator para criação da estrutura padrão de um plugin</p>
+
+<div class="highlight highlight-sh"><pre>$ rails generate redmine_plugin <span class="pl-k">&lt;</span>plugin_name<span class="pl-k">&gt;</span></pre></div>
+
+<p>Rodando por exemplo:</p>
+
+<div class="highlight highlight-sh"><pre>$ rails generate redmine_plugin polls</pre></div>
+
+<p>Ele irá criar dentro da pasta plugins:</p>
+
+<p><img src="https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/pasta-plugins.png" alt=""></p>
+
+<p>Reparem, ele criou uma estrutura muito parecida com a estrutura do próprio redmine, de diferente temos:</p>
+
+<ul>
+<li>assets
+
+<ul>
+<li>Nessa pasta ficarão as imagens, javascript e css do plugin. O Redmine ao iniciar irá pegar esses arquivos e colocar na pasta plugin_assets dentro da pasta public</li>
+</ul>
+</li>
+</ul>
+
+<p>Editando o init.rb veremos</p>
+
+<div class="highlight highlight-rb"><pre>  <span class="pl-c1">Redmine</span>::<span class="pl-c1">Plugin</span>.register <span class="pl-c1">:polls</span> <span class="pl-k">do</span>
+    name <span class="pl-s"><span class="pl-pds">'</span>Polls plugin<span class="pl-pds">'</span></span>
+    author <span class="pl-s"><span class="pl-pds">'</span>Author name<span class="pl-pds">'</span></span>
+    description <span class="pl-s"><span class="pl-pds">'</span>This is a plugin for Redmine<span class="pl-pds">'</span></span>
+    version <span class="pl-s"><span class="pl-pds">'</span>0.0.1<span class="pl-pds">'</span></span>
+    url <span class="pl-s"><span class="pl-pds">'</span>http://example.com/path/to/plugin<span class="pl-pds">'</span></span>
+    author_url <span class="pl-s"><span class="pl-pds">'</span>http://example.com/about<span class="pl-pds">'</span></span>
+  <span class="pl-k">end</span></pre></div>
+
+<p>O init.rb é o arquivo que o redmine chama ao carregar o plugin, iremos utilizar mais ele no futuro. Mas por enquanto podemos somente modificar as informações do plugin.</p>
+
+<p>Essas informações irão aparecer da seguinte forma no redmine:</p>
+
+<p><img src="https://raw.githubusercontent.com/victorlcampos/curso-redmine/master/imagens/informacoes-plugins.png" alt=""></p>
+
+<h4>
+<a id="criando-um-modelo" class="anchor" href="#criando-um-modelo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Criando um modelo</h4>
+
+<p>Novamente, para criar um modelo dentro de um plugin, podemos chamar o generator do próprio redmine</p>
+
+<div class="highlight highlight-sh"><pre>$ rails generate redmine_plugin_model <span class="pl-k">&lt;</span>plugin_name<span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span>model_name<span class="pl-k">&gt;</span> [field[:<span class="pl-c1">type</span>][:index] field[:<span class="pl-c1">type</span>][:index] ...]</pre></div>
+
+<p>Podendo reparar que é muito parecido com o generator de modelo do rails.
+Então vamos criar um modelo poll dentro do plugins polls, que vai ter uma question do tipo string, uma contagem de sim e uma contagem de não, ambos do tipo numérico.</p>
+
+<div class="highlight highlight-sh"><pre>$ rails generate redmine_plugin_model polls poll question:string yes:integer no:integer
+    create  plugins/polls/app/models/poll.rb
+    create  plugins/polls/test/unit/poll_test.rb
+    create  plugins/polls/db/migrate/001_create_polls.r</pre></div>
+
+<p>Reparem, ele criou um modelo na pasta models e uma migração na pasta migrations</p>
+
+<p>Vamos olhar essa migração:</p>
+
+<div class="highlight highlight-rb"><pre><span class="pl-k">class</span> <span class="pl-en">CreatePolls<span class="pl-e"> &lt; ActiveRecord::Migration</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">change</span>
+    create_table <span class="pl-c1">:polls</span> <span class="pl-k">do </span>|<span class="pl-smi">t</span>|
+      t.string <span class="pl-c1">:question</span>
+      t.integer <span class="pl-c1">:yes</span>
+      t.integer <span class="pl-c1">:no</span>
+    <span class="pl-k">end</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Vamos entender a migração, ela chama uma função <em>create_table</em> que recebe como argumento um símbolo (:polls) e um bloco de código que recebe também um argumento(t).</p>
+
+<blockquote>
+<p>Primeiro, o que é um símbolo? Você deve estar se perguntando</p>
+</blockquote>
+
+<p>Um simbolo é parecido com a String do Java. A diferença entre "polls" e :polls é que o primeiro é mutável, se você fizer:</p>
+
+<div class="highlight highlight-rb"><pre>  a <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>
+  a <span class="pl-k">+=</span> <span class="pl-s"><span class="pl-pds">"</span>b<span class="pl-pds">"</span></span>
+  print a
+    =&gt; <span class="pl-s"><span class="pl-pds">"</span>ab<span class="pl-pds">"</span></span>
+  a <span class="pl-k">=</span> <span class="pl-c1">nil</span></pre></div>
+
+<p>Quando o GC for executado, não teremos nada alocado na memória.</p>
+
+<p>Já um símbolo, não possui um método para concatenar e se executácemos:</p>
+
+<div class="highlight highlight-rb"><pre>  a <span class="pl-k">=</span> <span class="pl-c1">:a</span>
+  print a
+    =&gt; <span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>
+  a <span class="pl-k">=</span> <span class="pl-c1">nil</span></pre></div>
+
+<p>O símbolo :a, não seria arrancado da memória. Isso é perigoso quando criamos símbolos dinamicamente e é uma <a href="http://brakemanscanner.org/docs/warning_types/denial_of_service/">vunerabilidade</a> conhecida do Rails.</p>
+
+<p>Mas porque então usamos ele ao invés de String, a resposta é simples: desempenho.</p>
+
+<p>Se você cria um símbolo de maneira controlada, sempre que você for acessa-lo, não precisará realocar memória e não importa quantas variáveis apontem para ele, elas vão estar consumindo a mesma quantidade de memória, pois estarão apontando sempre para a mesma posição.</p>
+
+<blockquote>
+<p>Agora que já entendi o que é um símbolo, o que diabos é passar um bloco de código como argumento?</p>
+</blockquote>
+
+<p>Bom, em ruby uma função pode receber um bloco de código e executa-lo dentro dela. O equivalente em Java 7 seria instanciar uma interface e preencher os métodos, muito usado nos handlers da vida.</p>
+
+<p>No caso da função create_table ela executa o que tem que executar, instância um objeto e passa para a nossa função anônima. Como o ruby é Duck Typing, se o objeto t recebido pela nossa função anônima tiver todos os métodos necessários para o bloco de código ser executado, então o bloco será executado sem problema.</p>
+
+<p>Esse bloco irá chamar os métodos do objeto t que criam as colunas, o método string cria uma coluna do tipo string, o integer do tipo integer, etc...
+O método create_table cria sozinho a coluna id e os timestamps.</p>
+
+<p>Para saber mais sobre as migrações do Rails acesse <a href="http://guides.rubyonrails.org/v3.2.21/migrations.html">http://guides.rubyonrails.org/v3.2.21/migrations.html</a></p>
+
+<p>Para executar as migrações dentro dos plugins:</p>
+
+<div class="highlight highlight-sh"><pre>$ rake redmine:plugins:migrate
+Migrating polls (Polls plugin)...
+==  CreatePolls: migrating ====================================================
+-- create_table(:polls)
+   -<span class="pl-k">&gt;</span> 0.0323s
+==  CreatePolls: migrated (0.0324s) ===========================================</pre></div>
+
+<p>O rails irá criar a table a as colunas para você, "indendente" do banco que esteja configurado no seu database.yml</p>
+
+<p>Utilizando <strong>convenção sobre configuração</strong>, ele irá atribuir todas as colunas da tabela polls(plural) ao modelo poll(sigular) como métodos, já com getters &amp; setters</p>
+
+<div class="highlight highlight-rb"><pre><span class="pl-k">class</span> <span class="pl-en">Poll<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  unloadable
+<span class="pl-k">end</span>
+
+poll <span class="pl-k">=</span> <span class="pl-c1">Poll</span>.<span class="pl-k">new</span>
+poll.question <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Question 1<span class="pl-pds">"</span></span>
+print poll.question
+=&gt; <span class="pl-s"><span class="pl-pds">"</span>Question 1<span class="pl-pds">"</span></span>
+print poll.yes
+=&gt; <span class="pl-c1">nil</span></pre></div>
+
+<h4>
+<a id="criando-um-controller" class="anchor" href="#criando-um-controller" aria-hidden="true"><span class="octicon octicon-link"></span></a>Criando um Controller</h4>
+
+<p>Você já deve ter imaginado que o Redmine possui um generator para o controller</p>
+
+<div class="highlight highlight-sh"><pre>$ rails generate redmine_plugin_controller <span class="pl-k">&lt;</span>plugin_name<span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span>controller_name<span class="pl-k">&gt;</span> [<span class="pl-k">&lt;</span>actions<span class="pl-k">&gt;</span>]</pre></div>
+
+<p>Seguindo nosso exemplo, podemos criar um controller para as enquetes</p>
+
+<div class="highlight highlight-sh"><pre>$ rails generate redmine_plugin_controller polls polls
+  create  plugins/polls/app/controllers/polls_controller.rb
+  create  plugins/polls/app/helpers/polls_helper.rb
+  create  plugins/polls/test/functional/polls_controller_test.rb</pre></div>
+
+<p>É uma boa prática seguir o padrão rest no rails que consiste nas actions:</p>
+
+<table>
+<thead>
+<tr>
+<th>método HTTP</th>
+<th>Nome da Action</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>index</td>
+<td>Listar</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>show</td>
+<td>Mostrar</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>new</td>
+<td>Formulário de criação</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>create</td>
+<td>Gravar modelo no banco</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>edit</td>
+<td>Formulário de ediçào</td>
+</tr>
+<tr>
+<td>PUT/PATCH</td>
+<td>update</td>
+<td>Atualizar modelo no banco</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>destroy</td>
+<td>Apagar modelo do banco</td>
+</tr>
+</tbody>
+</table>
+
+<p>Por exemplo, se quisermos criar uma <em>action</em> <strong>index</strong> para o controller devemos editar o controller para:</p>
+
+<div class="highlight highlight-rb"><pre><span class="pl-k">class</span> <span class="pl-en">PollsController<span class="pl-e"> &lt; ApplicationController</span></span>
+  unloadable
+
+  <span class="pl-k">def</span> <span class="pl-en">index</span>
+    <span class="pl-smi">@polls</span> <span class="pl-k">=</span> <span class="pl-c1">Poll</span>.all <span class="pl-c"># busca todas as enquetes do banco</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<blockquote>
+<p>Mas o que é essa variável com @?</p>
+</blockquote>
+
+<p>Em ruby o escopo da variável é definido da seguinte forma:</p>
+
+<ul>
+<li>Sem @, escopo local, somente dentro do bloco de código que se encontra e bloco de códigos filhos</li>
+<li>@, escopo instância, a variável é vista dentro de qualquer método do objeto</li>
+<li>@@, escopo classe, no Java seriam as variáveis estáticas.</li>
+</ul>
+
+<p>Como já mencionado, as views enchergam as variáveis de instância dos controllers que as renderizaram.</p>
+
+<h4>
+<a id="adicionando-rota" class="anchor" href="#adicionando-rota" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adicionando rota</h4>
+
+<p>Como explicado no <a href="#fluxo-de-dados">Fluxo de Dados</a>, quando uma url é chamada, o Rails busca nos arquivos de rota para qual controller#action ele deve direcionar o chamado. Cada plugin do redmine possui seu próprio arquivo de rotas, que fica dentro de <em>config/</em>.</p>
+
+<p>Podemos adicionar rotas de duas maneiras no Rails, a primeira no formato</p>
+
+<div class="highlight highlight-rb"><pre>  http_method url_partner, <span class="pl-c1">to:</span> <span class="pl-s"><span class="pl-pds">'</span>controller#action<span class="pl-pds">'</span></span></pre></div>
+
+<p>No nosso exemplo seria:</p>
+
+<div class="highlight highlight-rb"><pre>  get <span class="pl-s"><span class="pl-pds">'</span>pools<span class="pl-pds">'</span></span>, <span class="pl-c1">to:</span> <span class="pl-s"><span class="pl-pds">'</span>polls#index<span class="pl-pds">'</span></span></pre></div>
+
+<p>Quando acessácemos 'http://localhost:3000/polls' a action index do controller polls seria executada. Mas isso aparenta ser pouco <strong>convenção sobre configuação</strong> correto? Não parece ser muito rails way de fazer as coisas.</p>
+
+<p>Bom, o rails possui o método <em>resources(controller_name, opts)</em> que define todas as rotas do rest por padrão, então podemos definir:</p>
+
+<div class="highlight highlight-rb"><pre>  resources <span class="pl-c1">:polls</span></pre></div>
+
+<p>O rails possui por padrão uma rake task que lista todas as rotas criadas, vamos roda-la e usar o grep para filtrar somente as rotas do Controller polls</p>
+
+<div class="highlight highlight-sh"><pre>$ rake routes <span class="pl-k">|</span> grep polls
+polls GET          /polls(.:format) polls#index
+      POST         /polls(.:format) polls#create
+new_poll GET          /polls/new(.:format) polls#new
+edit_poll GET          /polls/:id/edit(.:format) polls#edit
+ poll GET          /polls/:id(.:format) polls#show
+      PUT          /polls/:id(.:format) polls#update
+      DELETE       /polls/:id(.:format) polls#destroy</pre></div>
+
+<p>Podemos reparar que todas as rotas necessárias para um serviço rest foram criadas. Se você paar para analisar um segundo, verá que a saída tem uma primeira coluna, o que será ela?</p>
+
+<p>Para você não sair escrevendo urls de forma hardcode, o rails cria por padrão dois métodos para cada rota, uma com sufixo path e uma com sufixo url, no nosso caso temos a polls_path e polls_url que tem como retorno /polls e http://localhost:3000/polls respectivamente.</p>
+
+<p>Com isso você não precisa modificar as urls em produção.</p>
+
+<blockquote>
+<p>Ok, achei super legal, mas eu somente queria uma rota para index e ele criou várias que eu nem preciso usar.</p>
+</blockquote>
+
+<p>É verdade, por isso uma das opções que o método aceita é <em>only</em>. Podemos passar da seguinte maneira:</p>
+
+<div class="highlight highlight-rb"><pre>  resources <span class="pl-c1">:polls</span>, <span class="pl-c1">only:</span> [<span class="pl-c1">:index</span>]</pre></div>
+
+<p>Sendo agora somente criado a rota para a action index.</p>
+
+<p>As rotas no rails são <strong>MUITO</strong> poderosas e poderia escrever um artigo somente sobre elas, então aconselho a dar uma olhada na guia oficial da linguagem para conhecer essa ferramenta incrível: <a href="http://guides.rubyonrails.org/routing.html">http://guides.rubyonrails.org/routing.html</a></p>
+
+<h4>
+<a id="adicionando-um-link-no-menu" class="anchor" href="#adicionando-um-link-no-menu" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adicionando um link no menu</h4>
+
+<p>O redmine possui diversos menus que você pode adicionar links para seus controllers, são eles:</p>
+
+<ul>
+<li>:top_menu - menu superior esquerdo</li>
+<li>:account_menu - menu superior direito, onde ficam os links de login e sair</li>
+<li>:application_menu - menu principal fora de projetos</li>
+<li>:project_menu - menu principal dentro de projetos</li>
+<li>:admin_menu - menu dos administradores</li>
+</ul>
+
+<p>Para adicionar um menu, é necessário editar o arquivo init.rb e dentro do registro do plugin usar o método menu que tem a sintaxe:</p>
+
+<div class="highlight highlight-rb"><pre>menu(menu_name, item_name, url, options<span class="pl-k">=</span>{})</pre></div>
+
+<p>No nosso exemplo ficaria:</p>
+
+<div class="highlight highlight-rb"><pre>  menu <span class="pl-c1">:application_menu</span>, <span class="pl-c1">:polls</span>, { <span class="pl-c1">controller:</span> <span class="pl-s"><span class="pl-pds">'</span>polls<span class="pl-pds">'</span></span>, <span class="pl-c1">action:</span> <span class="pl-s"><span class="pl-pds">'</span>index<span class="pl-pds">'</span></span> }</pre></div>
+
+<p>As opções que podemos passar são:</p>
+
+<ul>
+<li>:param - the parameter key that is used for the project id (default is :id)</li>
+<li>:if - a Proc that is called before rendering the item, the item is displayed only if it returns true</li>
+<li>:caption - the menu caption that can be:
+
+<ul>
+<li>a localized string Symbol</li>
+<li>a String</li>
+<li>a Proc that can take the project as argument</li>
+</ul>
+</li>
+<li>:before, :after - specify where the menu item should be inserted (eg. :after =&gt; :activity)</li>
+<li>:first, :last - if set to true, the item will stay at the beginning/end of the menu (eg. :last =&gt; true)</li>
+<li>:html - a hash of html options that are passed to link_to when rendering the menu item</li>
+</ul>
+
+<p>Com isso, criaremos um link para a nossa action no menu principal fora dos projetos</p>
+
+<h4>
+<a id="internacionalização" class="anchor" href="#internacionaliza%C3%A7%C3%A3o" aria-hidden="true"><span class="octicon octicon-link"></span></a>Internacionalização</h4>
+
+<p>A última coisa que falta para o menu, é que nossos clientes são Brasileiros e falam português, eles não querem polls e sim enquetes escrito no menu. Para fazer essa alteração, iremos criar um arquivo chamado pt-BR.yml dentro do config/locates do plugin e preencher com o seguinte conteúdo:</p>
+
+<div class="highlight highlight-yml"><pre><span class="pl-s"><span class="pl-ent">pt-BR:</span></span>
+  <span class="pl-s"><span class="pl-ent">label_polls:</span> <span class="pl-s">Enquetes</span></span></pre></div>
+
+<p>Caso a opção caption não seja passada, <strong>e ela não deve ser</strong>, o redmine usa o <em>menu_name</em> préfixado com <em>label</em> para fazer a internacionalização do menu.</p>
+
+<p>Para saber mais sobre internacionalização no rails: <a href="http://guides.rubyonrails.org/i18n.html">http://guides.rubyonrails.org/i18n.html</a></p>
+
+<h4>
+<a id="criando-uma-view" class="anchor" href="#criando-uma-view" aria-hidden="true"><span class="octicon octicon-link"></span></a>Criando uma View</h4>
+
+<p>Agora que já temos uma rota, um controller e um botão que o usuário pode clicar para acessar nosso controller, precisamos codificar o que o usuário vai ver quando acessar nossa action. Como falado anteriormente o Rails vai procurar dentro da pasta com o mesmo nome do controller, <em>polls</em>, uma view com o mesmo nome da action, <em>index</em>.</p>
+
+<p>Então criaremos o arquivo index.html.erb dentro da pasta app/views/polls do plugin e colocaremos o seguinte conteúdo:</p>
+
+<div class="highlight highlight-erb"><pre>&lt;<span class="pl-ent">h1</span>&gt;Polls&lt;/<span class="pl-ent">h1</span>&gt;
+&lt;<span class="pl-ent">ul</span>&gt;
+  <span class="pl-pse">&lt;%</span><span class="pl-s1"> <span class="pl-smi">@polls</span>.each <span class="pl-k">do </span>|<span class="pl-smi">polls</span>| </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+    &lt;<span class="pl-ent">li</span>&gt;<span class="pl-pse">&lt;%=</span><span class="pl-s1"> polls.question </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>&lt;/<span class="pl-ent">li</span>&gt;
+  <span class="pl-pse">&lt;%</span><span class="pl-s1"> <span class="pl-k">end</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+&lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+
+<blockquote>
+<p>O que diabos é .erb depois do .html?</p>
+</blockquote>
+
+<p>erb ou Embedded Ruby ou mesmo eRuby é o template padrão do Rails, existem diversos outros e a comunidade é bem dividida nesse ponto. O rails permite adicionar qualquar preprocessador de arquivo estático, sempre lendo as extensões da direita para esquerda. Se tivéssemos um javascript que quiséssemos que antes dele ser enviado para o cliente, rodasse código ruby, poderíamos criar o arquivo <em>file.js.erb</em>.</p>
+
+<p>Para entender mais sobre views, que é um dos pontos mais completos do Rails. Ele aceita partials, layouts, content, e várias outras features que facilitam o <strong>dry</strong>, leia o <a href="http://guides.rubyonrails.org/layouts_and_rendering.html">http://guides.rubyonrails.org/layouts_and_rendering.html</a></p>
+
+<h4>
+<a id="assets" class="anchor" href="#assets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assets</h4>
+
+<p>Vale ressaltar que view feia não agrada cliente e muitas vezes precisamos escrever css e javascript específicos para um plugin. Para isso o redmine permite adicionar assets da seguinte forma:</p>
+
+<div class="highlight highlight-erb"><pre><span class="pl-pse">&lt;%</span><span class="pl-s1"> content_for <span class="pl-c1">:header_tags</span> <span class="pl-k">do </span></span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  <span class="pl-pse">&lt;%=</span><span class="pl-s1"> stylesheet_link_tag <span class="pl-s"><span class="pl-pds">'</span>css_name<span class="pl-pds">'</span></span>, <span class="pl-c1">plugin:</span> <span class="pl-s"><span class="pl-pds">'</span>plugin_name<span class="pl-pds">'</span></span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  <span class="pl-pse">&lt;%=</span><span class="pl-s1"> javascript_link_tag <span class="pl-s"><span class="pl-pds">'</span>js_name<span class="pl-pds">'</span></span> , <span class="pl-c1">plugin:</span> <span class="pl-s"><span class="pl-pds">'</span>plugin_name<span class="pl-pds">'</span></span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+<span class="pl-pse">&lt;%</span><span class="pl-s1"> <span class="pl-k">end</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span></pre></div>
+
+<p>Se você leu o guia sobre layout como sugerido, saberá que este <em>content_for</em> rodará o bloco de código passado por ele na posição onde tiver um yield(:header_tags), que no nosso caso fica dentro da tag</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">header</span>&gt;&lt;/<span class="pl-ent">header</span>&gt;</pre></div>
+
+<p>O método <em>stylesheet_link_tag</em>, adiciona um link para o css com nome <em>css_name</em> que se encontra dentro do plugin com nome igual <em>plugin_name</em>, assim como o <em>javascript_link_tag</em> fará para o javascript.</p>
+
+<p>Com isso você não precisará modificar o código direto dos assets do redmine para fazer uma modificação específica da sua view.</p>
+
+<h4>
+<a id="permissões" class="anchor" href="#permiss%C3%B5es" aria-hidden="true"><span class="octicon octicon-link"></span></a>Permissões</h4>
+
+<h4>
+<a id="módulos" class="anchor" href="#m%C3%B3dulos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Módulos</h4>
+
+<h4>
+<a id="hooks" class="anchor" href="#hooks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hooks</h4>
+
+<h5>
+<a id="hooks-nas-views" class="anchor" href="#hooks-nas-views" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hooks nas Views</h5>
+
+<h5>
+<a id="hooks-nos-controllers" class="anchor" href="#hooks-nos-controllers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hooks nos controllers</h5>
+
+<h4>
+<a id="fazendo-um-plugin-ser-configurável" class="anchor" href="#fazendo-um-plugin-ser-configur%C3%A1vel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fazendo um plugin ser configurável</h4>
+
+<h4>
+<a id="sobrescrevendo-um-modelo" class="anchor" href="#sobrescrevendo-um-modelo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sobrescrevendo um Modelo</h4>
+
+<h4>
+<a id="sobrescrevendo-um-controller" class="anchor" href="#sobrescrevendo-um-controller" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sobrescrevendo um Controller</h4>
+
+<h4>
+<a id="sobrescrevendo-uma-view" class="anchor" href="#sobrescrevendo-uma-view" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sobrescrevendo uma View</h4>
+
+<h3>
+<a id="fonte-de-estudo" class="anchor" href="#fonte-de-estudo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fonte de Estudo</h3>
+
+<ol>
+<li><a href="http://guides.rubyonrails.org/">http://guides.rubyonrails.org/</a></li>
+<li><a href="http://www.redmine.org/projects/redmine/wiki/Plugin_Tutorial">http://www.redmine.org/projects/redmine/wiki/Plugin_Tutorial</a></li>
+<li><a href="http://www.redmine.org/projects/redmine/wiki/Hooks">http://www.redmine.org/projects/redmine/wiki/Hooks</a></li>
+<li><a href="http://www.redmine.org/projects/redmine/wiki/Plugin_Internals">http://www.redmine.org/projects/redmine/wiki/Plugin_Internals</a></li>
+</ol>
+
+<h3>
+<a id="futuro" class="anchor" href="#futuro" aria-hidden="true"><span class="octicon octicon-link"></span></a>Futuro</h3>
+
+<p>A ideia de desenvolver o curso no github é deixar ele colaborativo e expansível, assim como o Redmine. Gerando assim uma apostila completa sobre o assunto, que se mantenha sempre atualizada.</p>
+
+<h3>
+<a id="colaboradores" class="anchor" href="#colaboradores" aria-hidden="true"><span class="octicon octicon-link"></span></a>Colaboradores</h3>
+
+<p>Quem contribuir com esse material, pesso que mande um pull request adicionado o seu nome na lista abaixo.</p>
+
+<ul>
+<li>Victor Lima Campos(victorlcampos)</li>
+</ul>
+
+<h3>
+<a id="alunos" class="anchor" href="#alunos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alunos</h3>
+
+<p>Quem utilizar esse material para estudo, pesso que mande um pull request adicionado o seu nome na lista abaixo.</p>
+
+<ul>
+<li>Victor Lima Campos(victorlcampos)</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/victorlcampos/curso-redmine">Curso-redmine</a> is maintained by <a href="https://github.com/victorlcampos">victorlcampos</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
