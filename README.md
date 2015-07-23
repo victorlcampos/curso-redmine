@@ -229,7 +229,7 @@ Para automatizar tarefas, temos o **rake**, vamos utilizar para gerar o token de
 $ rake generate_secret_token
 ```
 
-Também precisamos gerar as tebelas do banco de dados que o redmine usa. O Rails por padrão possui migrações, arquivos em ruby(.rb) que descreve as operações que devemos realizar no banco.
+Também precisamos gerar as tabelas do banco de dados que o redmine usa. O Rails por padrão possui migrações, arquivos em ruby(.rb) que descreve as operações que devemos realizar no banco.
 
 Podemos com o rake rodar todas essas migrações e o Rails se encarrega de transformar no sql certo para o banco descrito no database.yml
 
