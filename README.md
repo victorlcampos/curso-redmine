@@ -687,3 +687,4 @@ Quem utilizar esse material para estudo, peço que mande um pull request adicion
 - Victor Lima Campos (victorlcampos)
 - Annanda Sousa (annanda)
 - Julio Nascimento (juliocesarnrocha)
+- Gabriel Rodrigues (gabrieldesar)
