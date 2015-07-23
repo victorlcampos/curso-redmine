@@ -678,9 +678,11 @@ Com isso você não precisará modificar o código direto dos assets do redmine 
 A ideia de desenvolver o curso no github é deixar ele colaborativo e expansível, assim como o Redmine. Gerando assim uma apostila completa sobre o assunto, que se mantenha sempre atualizada.
 
 ### Colaboradores
-Quem contribuir com esse material, pesso que mande um pull request adicionado o seu nome na lista abaixo.
+Quem contribuir com esse material, peço que mande um pull request adicionado o seu nome na lista abaixo.
 - Victor Lima Campos(victorlcampos)
+- Annanda Sousa (annanda)
 
 ### Alunos
-Quem utilizar esse material para estudo, pesso que mande um pull request adicionado o seu nome na lista abaixo.
+Quem utilizar esse material para estudo, peço que mande um pull request adicionado o seu nome na lista abaixo.
 - Victor Lima Campos(victorlcampos)
+- Annanda Sousa (annanda)
