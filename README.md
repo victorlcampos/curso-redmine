@@ -132,7 +132,7 @@ E como ruby é altamente influenciada por programação funcinal, toda função 
 
 Para instalar o Ruby no Linux **(Usem LINUX)**, vamos utilizar um gerenciador de versão do Ruby para conseguirmos ter mais de uma versão rodando na mesma máquina.
 
-Os dois gerênciadores mais famosos são o rbenv e o rvm. Para esse curso vamos utilizar o rvm.
+Os dois gerenciadores mais famosos são o rbenv e o rvm. Para esse curso vamos utilizar o rvm.
 
 <sub><sup>Escolha baseada em gosto pessoal, se quiserem se aventurar no rbenv ele também é muito bom.</sup></sub>
 
@@ -177,7 +177,7 @@ Vamos instalar a versão 3.2 do rails pois é a última compatível com o redmin
 ##### Introdução
 ![](http://www.redmine.org/attachments/3458/redmine_logo_v1.png)
 
-O Redmine é um gerenciador de projeto **muito** flexível, extensível e configurável. Como o código é aberto, conseguimos utiliza-lo para atender as mais variádas demandas dos clientes. As principais features nativas são:
+O Redmine é um gerenciador de projeto **muito** flexível, extensível e configurável. Como o código é aberto, conseguimos utiliza-lo para atender as mais variadas demandas dos clientes. As principais features nativas são:
 - Multiple projects support
 - Flexible role based access control
 - Flexible issue tracking system
@@ -221,7 +221,7 @@ Ele irá olhar o arquivo Gemfile, na pasta raiz do projeto e instalar todas as d
 
 > O Bundle faz tudo que o Maven faz?
 
-**NÃO**, ele, diferente do Maven, se foca em fazer bem uma única coisa: gerênciar dependências.
+**NÃO**, ele, diferente do Maven, se foca em fazer bem uma única coisa: gerenciar dependências.
 
 Para automatizar tarefas, temos o **rake**, vamos utilizar para gerar o token de segurança de sessão.
 
@@ -250,11 +250,11 @@ A primeira coisa para se entender como programar utilizando Ruby on Rails é ent
 Quando um request chega ele segue o fluxo:
 - Tenta encaixar a url do request em algum partner cadastrado nos arquivos de rotas.
   - Podemos verificar todas as rotas cadastradas rodando o comando  "_rake routes_" no terminal
-- O arquivo de rotas dira para o Rails qual o controller ele deve chamar e qual action ele deve executar.
+- O arquivo de rotas dirá para o Rails qual o controller ele deve chamar e qual action ele deve executar.
   - Uma action é o nome de um método de um controller
 - Uma action pode redirectionar para outra action ou renderizar uma view.
   - Por padrão o Rails renderiza a view com o mesmo nome da action dentro da pasta com o mesmo nome do controller. **(Convenção sobre Configuração)**
-- A view encherga as variáveis de instâncias(@) do controller
+- A view enxerga as variáveis de instâncias(@) do controller
 
 Entender e praticar esse fluxo é de extrema importância para saber encontrar o que você deseja modificar no Redmine e saber em qual parte do código está dando erro. Com o tempo você perceberá que as coisas estão onde devem estar.
 
