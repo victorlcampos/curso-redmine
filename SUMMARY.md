@@ -14,7 +14,7 @@
        * [Instalação](chapters/ambiente_de_desenvolvimento/rails/instalacao.md)
    * [Redmine](chapters/ambiente_de_desenvolvimento/redmine.md)
        * [Introdução](chapters/ambiente_de_desenvolvimento/redmine/introducao.md)
-       * Instalação
+       * [Instalação](chapters/ambiente_de_desenvolvimento/redmine/instalacao.md)
 * Fluxo de Dados
 * Estrutura das Pastas
    * Subpastas importantes
