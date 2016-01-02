@@ -21,7 +21,7 @@
        * [App](chapters/estrutura_de_pastas/subpastas_importantes/app.md)
        * [Public](chapters/estrutura_de_pastas/subpastas_importantes/public.md)
 * [Plugins](chapters/plugins.md)
-   * Quando devo desenvolver um plugin?
+   * [Quando devo desenvolver um plugin?](chapters/plugins/quando_devo_desenvolver_um_plugin.md)
    * Como criar um plugin
    * Criando um modelo
    * Criando um controller
