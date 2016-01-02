@@ -17,9 +17,9 @@
       * Instalação
 * Fluxo de Dados
 * Estrutura das Pastas
-    * Subpastas importantes
-        * App
-        * Public
+  * Subpastas importantes
+  * App
+  * Public
 * Plugins
     * Quando devo desenvolver um plugin?
     * Como criar um plugin
