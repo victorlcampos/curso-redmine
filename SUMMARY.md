@@ -32,7 +32,7 @@
    * [Assets](chapters/plugins/assets.md)
    * [Permissões](chapters/plugins/permissoes.md)
    * [Módulos](chapters/plugins/modulos.md)
-   * Hooks
+   * [Hooks](chapters/plugins/modulos/hooks.md)
        * Hooks nas Views
        * Hooks nos Controllers
    * Fazendo um plugin ser configurável
