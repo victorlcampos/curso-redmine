@@ -40,6 +40,7 @@
        * Sobrescrever um Modelo
        * Sobrescrever um Controller
        * Sobrescrever uma view
+* Fonte de Estudo
 * [Futuro](chapters/futuro.md)
 * [Colaboradores](chapters/colaboradores.md)
 * [Leitores](chapters/leitores.md)
