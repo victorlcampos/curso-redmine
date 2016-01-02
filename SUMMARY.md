@@ -1,7 +1,6 @@
 # Summary
 
 * O Curso
-    * Introdução
 * Ambiente de Desenvolvimento
   * IDEs
     * Sublime
