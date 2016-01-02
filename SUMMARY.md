@@ -20,7 +20,7 @@
    * [Subpastas importantes](chapters/estrutura_de_pastas/subpastas_importantes.md)
        * [App](chapters/estrutura_de_pastas/subpastas_importantes/app.md)
        * [Public](chapters/estrutura_de_pastas/subpastas_importantes/public.md)
-* Plugins
+* [Plugins](chapters/plugins.md)
    * Quando devo desenvolver um plugin?
    * Como criar um plugin
    * Criando um modelo
