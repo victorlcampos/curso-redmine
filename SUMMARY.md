@@ -26,7 +26,7 @@
    * [Criando um modelo](chapters/plugins/criando_um_modelo.md)
    * [Criando um controller](chapters/plugins/criando_um_controller.md)
    * [Adicionando uma rota](chapters/plugins/adicionando_uma_rota.md)
-   * Adicionando um link ao menu
+   * [Adicionando um link ao menu](chapters/plugins/adicionando_um_link_ao_menu.md)
    * Internacionalização
    * Criando uma view
    * Assets
