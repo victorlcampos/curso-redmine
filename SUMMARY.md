@@ -25,7 +25,7 @@
    * [Como criar um plugin](chapters/plugins/como_criar_um_plugin.md)
    * [Criando um modelo](chapters/plugins/criando_um_modelo.md)
    * [Criando um controller](chapters/plugins/criando_um_controller.md)
-   * Adicionando uma rota
+   * [Adicionando uma rota](chapters/plugins/adicionando_uma_rota.md)
    * Adicionando um link ao menu
    * Internacionalização
    * Criando uma view
