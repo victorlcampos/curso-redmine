@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Sobre o livro](chapters/sobre_o_livro.md)
 * [Ambiente de Desenvolvimento](chapters/ambiente_de_desenvolvimento.md)
-   * IDEs
+   * [IDEs](chapters/ambiente_de_desenvolvimento/ides.md)
        * Sublime
        * Atom
        * RubyMine
