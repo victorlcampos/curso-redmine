@@ -42,5 +42,5 @@
        * Sobrescrever uma view
 * [Futuro](chapters/futuro.md)
 * [Colaboradores](chapters/colaboradores.md)
-* Leitores
+* [Leitores](chapters/leitores.md)
 
