@@ -1,7 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
-* [Sobre o livro](chapters/sobre_o_livro.md)
+* [Sobre o livro](README.md)
 * [Ambiente de Desenvolvimento](chapters/ambiente_de_desenvolvimento.md)
    * [IDEs](chapters/ambiente_de_desenvolvimento/ides.md)
        * [Sublime](chapters/ambiente_de_desenvolvimento/ides/sublime.md)
