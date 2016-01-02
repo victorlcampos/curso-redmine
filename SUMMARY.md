@@ -12,7 +12,7 @@
    * [Rails](chapters/ambiente_de_desenvolvimento/rails.md)
        * [Introdução](chapters/ambiente_de_desenvolvimento/rails/introducao.md)
        * [Instalação](chapters/ambiente_de_desenvolvimento/rails/instalacao.md)
-   * Redmine
+   * [Redmine](chapters/ambiente_de_desenvolvimento/redmine.md)
        * Introdução
        * Instalação
 * Fluxo de Dados
