@@ -62,8 +62,3 @@ Neste livro veremos como desenvolver plugins para Redmine 3.1. Com foco na teori
 ### Colaboradores
 
 ### Alunos
-Quem utilizar esse material para estudo, peço que mande um pull request adicionado o seu nome na lista abaixo.
-- Victor Lima Campos (victorlcampos)
-- Annanda Sousa (annanda)
-- Julio Nascimento (juliocesarnrocha)
-- Gabriel Rodrigues (gabrieldesar)
