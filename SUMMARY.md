@@ -11,7 +11,7 @@
        * [Introdução](chapters/ambiente_de_desenvolvimento/ruby/introducao.md)
        * [Instalação](chapters/ambiente_de_desenvolvimento/ruby/instalacao.md)
    * [Rails](chapters/ambiente_de_desenvolvimento/rails.md)
-       * Introdução
+       * [Introdução](chapters/ambiente_de_desenvolvimento/rails/introducao.md)
        * Instalação
    * Redmine
        * Introdução
