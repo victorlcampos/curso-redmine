@@ -40,7 +40,7 @@
        * Sobrescrever um Modelo
        * Sobrescrever um Controller
        * Sobrescrever uma view
-   * Futuro
-   * Colaboradores
-   * Leitores
+* Futuro
+* Colaboradores
+* Leitores
 
