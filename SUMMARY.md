@@ -24,7 +24,7 @@
    * [Quando devo desenvolver um plugin?](chapters/plugins/quando_devo_desenvolver_um_plugin.md)
    * [Como criar um plugin](chapters/plugins/como_criar_um_plugin.md)
    * [Criando um modelo](chapters/plugins/criando_um_modelo.md)
-   * Criando um controller
+   * [Criando um controller](chapters/plugins/criando_um_controller.md)
    * Adicionando uma rota
    * Adicionando um link ao menu
    * Internacionalização
