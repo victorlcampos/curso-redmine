@@ -58,7 +58,6 @@ Neste livro veremos como desenvolver plugins para Redmine 3.1. Com foco na teori
 
 
 ### Futuro
-A ideia de desenvolver o curso no github é deixar ele colaborativo e expansível, assim como o Redmine. Gerando assim uma apostila completa sobre o assunto, que se mantenha sempre atualizada.
 
 ### Colaboradores
 Quem contribuir com esse material, peço que mande um pull request adicionado o seu nome na lista abaixo.
