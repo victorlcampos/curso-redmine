@@ -32,7 +32,7 @@
    * [Assets](chapters/plugins/assets.md)
    * [Permissões](chapters/plugins/permissoes.md)
    * [Módulos](chapters/plugins/modulos.md)
-   * [Hooks](chapters/plugins/hooks.md)
+   * Hooks
    * Fazendo um plugin ser configurável
    * Sobrescrever o código do Redmine
        * Sobrescrever um Modelo
