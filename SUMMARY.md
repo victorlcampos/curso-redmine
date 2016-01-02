@@ -41,6 +41,6 @@
        * Sobrescrever um Controller
        * Sobrescrever uma view
 * [Futuro](chapters/futuro.md)
-* Colaboradores
+* [Colaboradores](chapters/colaboradores.md)
 * Leitores
 
