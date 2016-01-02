@@ -29,7 +29,7 @@
    * [Adicionando um link ao menu](chapters/plugins/adicionando_um_link_ao_menu.md)
    * [Internacionalização](chapters/plugins/internacionalizacao.md)
    * [Criando uma view](chapters/plugins/criando_uma_view.md)
-   * Assets
+   * [Assets](chapters/plugins/assets.md)
    * Permissões
    * Módulos
    * Hooks
