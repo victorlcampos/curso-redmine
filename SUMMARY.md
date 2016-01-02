@@ -5,7 +5,7 @@
 * [Ambiente de Desenvolvimento](chapters/ambiente_de_desenvolvimento.md)
    * [IDEs](chapters/ambiente_de_desenvolvimento/ides.md)
        * [Sublime](chapters/ambiente_de_desenvolvimento/ides/sublime.md)
-       * Atom
+       * [Atom](chapters/ambiente_de_desenvolvimento/ides/atom.md)
        * RubyMine
    * Ruby
        * Introdução
