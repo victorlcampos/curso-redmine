@@ -7,7 +7,7 @@
        * [Sublime](chapters/ambiente_de_desenvolvimento/ides/sublime.md)
        * [Atom](chapters/ambiente_de_desenvolvimento/ides/atom.md)
        * [RubyMine](chapters/ambiente_de_desenvolvimento/ides/rubymine.md)
-   * Ruby
+   * [Ruby](chapters/ambiente_de_desenvolvimento/ruby.md)
        * Introdução
        * Instalação
    * Rails
