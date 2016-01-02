@@ -2,19 +2,19 @@
 
 * O Curso
 * Ambiente de Desenvolvimento
-    * IDEs
-        * Sublime
-        * Atom
-        * RubyMine
-    * Ruby
-        * Introdução
-        * Instalação
-    * Rails
-        * Introdução
-        * Instalação
-    * Redmine
-        * Introdução
-        * Instalação
+  * IDEs
+    * Sublime
+      * Atom
+      * RubyMine
+  * Ruby
+      * Introdução
+      * Instalação
+  * Rails
+      * Introdução
+      * Instalação
+  * Redmine
+      * Introdução
+      * Instalação
 * Fluxo de Dados
 * Estrutura das Pastas
     * Subpastas importantes
