@@ -36,7 +36,7 @@
        * [Hooks nas Views](chapters/plugins/hooks/hooks_nas_views.md)
        * [Hooks nos Controllers](chapters/plugins/hooks/hooks_nos_controllers.md)
    * [Fazendo um plugin ser configurável](chapters/plugins/fazendo_um_plugin_ser_configuravel.md)
-   * Sobrescrever o código do Redmine
+   * [Sobrescrever o código do Redmine](chapters/plugins/sobrescrever_o_codigo_do_redmine.md)
        * Sobrescrever um Modelo
        * Sobrescrever um Controller
        * Sobrescrever uma view
