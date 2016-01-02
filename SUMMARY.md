@@ -17,7 +17,7 @@
        * [Instalação](chapters/ambiente_de_desenvolvimento/redmine/instalacao.md)
 * [Fluxo de Dados](chapters/fluxo_de_dados.md)
 * [Estrutura das Pastas](chapters/estrutura_das_pastas.md)
-   * Subpastas importantes
+   * [Subpastas importantes](chapters/estrutura_de_pastas/subpastas_importantes.md)
    * App
    * Public
 * Plugins
