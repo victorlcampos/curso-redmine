@@ -1,16 +1,3 @@
-### Ambiente de Desenvolvimento
-#### IDES
-##### Sublime
-
-
-##### Atom
-
-
-##### RubyMine
-
-#### Ruby
-##### Introdução
-
 
 ##### Instalar
 ![](https://rvm.io/images/rvm-logo-all-happy.png)
