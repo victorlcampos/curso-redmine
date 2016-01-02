@@ -3,15 +3,6 @@
 ##### Introdução
 
 ##### Instalar
-![](https://rubygems.org/favicon.ico)
-
-Podemos instalar o rails utilizando o RubyGem, uma gem seria o equivalente do jar no Java. O RubyGem é um instalador de _gems_ que já é instalado junto com o ruby pelo rvm, ele funciona parecido com o apt-get do ububtu.
-
-```sh
-$ sudo gem install rails -v 3.2.x
-```
-
-Vamos instalar a versão 3.2 do rails pois é a última compatível com o redmine 2.6
 
 #### Redmine
 ##### Introdução
