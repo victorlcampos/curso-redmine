@@ -30,7 +30,7 @@
    * [Internacionalização](chapters/plugins/internacionalizacao.md)
    * [Criando uma view](chapters/plugins/criando_uma_view.md)
    * [Assets](chapters/plugins/assets.md)
-   * Permissões
+   * [Permissões](chapters/plugins/permissoes.md)
    * Módulos
    * Hooks
        * Hooks nas Views
