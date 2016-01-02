@@ -18,10 +18,6 @@ $ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804B
 $ \curl -sSL https://get.rvm.io | bash -s stable
 
 $ rvm requirements
-$ rvm install 1.9.3
-$ rvm use 1.9.3 --default
+$ rvm install 2.2
+$ rvm use 2.2 --default
 ```
-
-O Redmine 2.6 usa o ruby 1.9.3, por isso instalamos ele.
-
-<sub><sub>Enquanto escrevia esse curso, verifiquei que na vesão [2.6.6](http://www.redmine.org/issues/19652) o Redmine passou a suportar o Ruby 2.2, mas como ainda não tive tempo de testar, vou seguir com a 1.9.3</sub><sub>
