@@ -18,8 +18,8 @@
 * [Fluxo de Dados](chapters/fluxo_de_dados.md)
 * [Estrutura das Pastas](chapters/estrutura_das_pastas.md)
    * [Subpastas importantes](chapters/estrutura_de_pastas/subpastas_importantes.md)
-    * App
-    * Public
+       * [App](chapters/estrutura_de_pastas/subpastas_importantes/app.md)
+       * Public
 * Plugins
    * Quando devo desenvolver um plugin?
    * Como criar um plugin
