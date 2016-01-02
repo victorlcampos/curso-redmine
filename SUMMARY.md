@@ -8,7 +8,7 @@
        * [Atom](chapters/ambiente_de_desenvolvimento/ides/atom.md)
        * [RubyMine](chapters/ambiente_de_desenvolvimento/ides/rubymine.md)
    * [Ruby](chapters/ambiente_de_desenvolvimento/ruby.md)
-       * Introdução
+       * [Introdução](chapters/ambiente_de_desenvolvimento/ruby/introducao.md)
        * Instalação
    * Rails
        * Introdução
