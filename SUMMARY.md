@@ -1,6 +1,4 @@
 # Summary
-
-* [Introduction](README.md)
 * [O Curso](chapters/o_curso.md)
 * Ambiente de Desenvolvimento
    * IDEs
