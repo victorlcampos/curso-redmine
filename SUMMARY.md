@@ -31,7 +31,7 @@
    * [Criando uma view](chapters/plugins/criando_uma_view.md)
    * [Assets](chapters/plugins/assets.md)
    * [Permissões](chapters/plugins/permissoes.md)
-   * Módulos
+   * [Módulos](chapters/plugins/modulos.md)
    * Hooks
        * Hooks nas Views
        * Hooks nos Controllers
