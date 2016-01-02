@@ -4,4 +4,5 @@
 * Ambiente de Desenvolvimento
    * IDEs
    * Sublime
+   * Atom
 
