@@ -5,4 +5,5 @@
    * IDEs
    * Sublime
    * Atom
+   * Sublime
 
