@@ -4,8 +4,8 @@
 * Ambiente de Desenvolvimento
   * IDEs
     * Sublime
-      * Atom
-      * RubyMine
+    * Atom
+    * RubyMine
   * Ruby
       * Introdução
       * Instalação
