@@ -27,7 +27,7 @@
    * [Criando um controller](chapters/plugins/criando_um_controller.md)
    * [Adicionando uma rota](chapters/plugins/adicionando_uma_rota.md)
    * [Adicionando um link ao menu](chapters/plugins/adicionando_um_link_ao_menu.md)
-   * Internacionalização
+   * [Internacionalização](chapters/plugins/internacionalizacao.md)
    * Criando uma view
    * Assets
    * Permissões
