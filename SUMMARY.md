@@ -32,9 +32,6 @@
    * [Assets](chapters/plugins/assets.md)
    * [Permissões](chapters/plugins/permissoes.md)
    * [Módulos](chapters/plugins/modulos.md)
-   * [Hooks](chapters/plugins/modulos/hooks.md)
-       * [Hooks nas Views](chapters/plugins/modulos/hooks/hooks_views/hooks_nas_views.md)
-       * [Hooks nos Controllers](chapters/plugins/modulos/hooks_controllers/hooks_nos_controllers.md)
    * Fazendo um plugin ser configurável
    * Sobrescrever o código do Redmine
        * Sobrescrever um Modelo
