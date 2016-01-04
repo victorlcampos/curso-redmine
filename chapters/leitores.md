@@ -5,3 +5,4 @@ Quem utilizar esse material para estudo, peço que mande um pull request adicion
 - Annanda Sousa (annanda)
 - Julio Nascimento (juliocesarnrocha)
 - Gabriel Rodrigues (gabrieldesar)
+- Felipe Lins Machado (felipelm)
