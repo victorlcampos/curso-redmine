@@ -54,7 +54,7 @@ Se o mesmo método for declarado duas vezes, a última declaração passa a vale
 
 E como ruby é altamente influenciada por programação funcinal, toda função tem um retorno, não existe função void em Ruby.
 
-# Instalação
+## Instalação
 
 ![](https://rvm.io/images/rvm-logo-all-happy.png)
 
