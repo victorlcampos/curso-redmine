@@ -25,5 +25,3 @@
 - test
   - Pasta com os testes automatizados do Redmine
 
-## Subpastas importantes
-
