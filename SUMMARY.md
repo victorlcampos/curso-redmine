@@ -5,7 +5,6 @@
    * [IDEs](chapters/ambiente_de_desenvolvimento/ides.md)
    * [Ruby](chapters/ambiente_de_desenvolvimento/ruby.md)
        * [Introdução](chapters/ambiente_de_desenvolvimento/ruby/introducao.md)
-       * [Instalação](chapters/ambiente_de_desenvolvimento/ruby/instalacao.md)
    * [Rails](chapters/ambiente_de_desenvolvimento/rails.md)
        * [Introdução](chapters/ambiente_de_desenvolvimento/rails/introducao.md)
        * [Instalação](chapters/ambiente_de_desenvolvimento/rails/instalacao.md)
