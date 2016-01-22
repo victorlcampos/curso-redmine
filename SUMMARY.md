@@ -9,7 +9,6 @@
 * [Fluxo de Dados](chapters/fluxo_de_dados.md)
 * [Estrutura das Pastas](chapters/estrutura_das_pastas.md)
    * [Subpastas importantes](chapters/estrutura_de_pastas/subpastas_importantes.md)
-       * [Public](chapters/estrutura_de_pastas/subpastas_importantes/public.md)
 * [Plugins](chapters/plugins.md)
    * [Quando devo desenvolver um plugin?](chapters/plugins/quando_devo_desenvolver_um_plugin.md)
    * [Como criar um plugin](chapters/plugins/como_criar_um_plugin.md)
