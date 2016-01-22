@@ -24,3 +24,5 @@
   - Contêm o script para inicialização do rails
 - test
   - Pasta com os testes automatizados do Redmine
+
+## Subpastas importantes
