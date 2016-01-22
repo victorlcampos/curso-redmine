@@ -6,7 +6,6 @@
    * [Ruby](chapters/ambiente_de_desenvolvimento/ruby.md)
    * [Rails](chapters/ambiente_de_desenvolvimento/rails.md)
    * [Redmine](chapters/ambiente_de_desenvolvimento/redmine.md)
-       * [Instalação](chapters/ambiente_de_desenvolvimento/redmine/instalacao.md)
 * [Fluxo de Dados](chapters/fluxo_de_dados.md)
 * [Estrutura das Pastas](chapters/estrutura_das_pastas.md)
    * [Subpastas importantes](chapters/estrutura_de_pastas/subpastas_importantes.md)
