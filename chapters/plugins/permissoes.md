@@ -39,3 +39,8 @@ Redmine::Plugin.register :polls do
   permission :vote_polls, polls: :vote
 end
 ```
+
+Com isso a seguinte opção aparece na edição de papeis e permissões:
+
+![](Screenshot from 2016-01-23 12:24:19.png)
+
