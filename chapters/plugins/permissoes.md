@@ -72,9 +72,26 @@ class PollsController < ApplicationController
   before_filter :find_project, :authorize
   
   def index
-    @project = Project.find(params[:project_id])
-    authorize
     @polls = Poll.all
   end
+  
+  protected
+  
+  def find_project
+    @project = Project.find(params[:project_id])
+  end
 end
+```
+
+Com isso, qualquer action nova no controller, verificará se o usuário tem permissão para acessa-la e o código do método da action terá a responsabilidade de executar somente o código necessário para ela, sem se preocupar com permissão.
+
+## Internacionalização
+
+Se vocês repararem na imagem de edição dos papéis, verão que o redmine por padrão quebra o _ em espaço e coloca a primeira letra maiúscula, mas ele também permite internacionalizar esse nome, criando uma chave no arquivo de tradução com o nome da permissão preficada com a palavra permission.
+
+No nosso caso:
+
+```yml
+  permission_view_polls: Ver enquetes
+  permission_vote_polls: Votar nas enquetes
 ```
