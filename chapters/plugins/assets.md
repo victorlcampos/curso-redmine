@@ -5,7 +5,7 @@ Vale ressaltar que view feia não agrada cliente e muitas vezes precisamos escre
 ```erb
 <% content_for :header_tags do %>
   <%= stylesheet_link_tag 'css_name', plugin: 'plugin_name' %>
-  <%= javascript_link_tag 'js_name' , plugin: 'plugin_name' %>
+  <%= javascript_include_tag 'js_name' , plugin: 'plugin_name' %>
 <% end %>
 ```
 
