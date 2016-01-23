@@ -35,7 +35,7 @@ edit_poll GET          /polls/:id/edit(.:format) polls#edit
       DELETE       /polls/:id(.:format) polls#destroy
 ```
 
-Podemos reparar que todas as rotas necessárias para um serviço rest foram criadas. Se você paar para analisar um segundo, verá que a saída tem uma primeira coluna, o que será ela?
+Podemos reparar que todas as rotas necessárias para um serviço rest foram criadas. Se você parar para analisar um segundo, verá que a saída tem uma primeira coluna, o que será ela?
 
 Para você não sair escrevendo urls de forma hardcode, o rails cria por padrão dois métodos para cada rota, uma com sufixo path e uma com sufixo url, no nosso caso temos a polls_path e polls_url que tem como retorno /polls e http://localhost:3000/polls respectivamente.
 
