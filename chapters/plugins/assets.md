@@ -15,6 +15,6 @@ Se você leu o guia sobre layout como sugerido, saberá que este _content_for_ r
 <header></header>
 ```
 
-O método _stylesheet_link_tag_, adiciona um link para o css com nome _css_name_ que se encontra dentro do plugin com nome igual _plugin_name_, assim como o _javascript_link_tag_ fará para o javascript.
+O método _stylesheet_link_tag_, adiciona um link para o css com nome _css_name_ que se encontra dentro do plugin com nome igual _plugin_name_, assim como o _javascript_include_tag_ fará para o javascript.
 
 Com isso você não precisará modificar o código direto dos assets do redmine para fazer uma modificação específica da sua view.
