@@ -65,3 +65,16 @@ Porém o Rails fornece um mecanimso de filtro, onde você pode setar métodos pa
 Para saber mais sobre a API de filtros, basta verificar http://guides.rubyonrails.org/action_controller_overview.html#filters
 
 No nosso caso iremos adcionar um _before_filter_ e dizer para ele chamar o nosso método find_project que vai buscar um projeto 
+
+```rb
+class PollsController < ApplicationController
+  unloadable
+  before_filter :find_project, :authorize
+  
+  def index
+    @project = Project.find(params[:project_id])
+    authorize
+    @polls = Poll.all
+  end
+end
+```
