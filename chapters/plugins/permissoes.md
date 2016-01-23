@@ -44,3 +44,7 @@ Com isso a seguinte opção aparece na edição de papeis e permissões:
 
 ![](Screenshot from 2016-01-23 12:24:19.png)
 
+Para as permissões valerem para o redmine, é necessário fazer um pequeno ajuste nos controller. Antes de qualquer action é necessário setar um @project para o projeto que o usuário está acessando e chamar o método authorize do redmine.
+
+
+
