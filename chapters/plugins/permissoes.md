@@ -27,6 +27,15 @@ e options podem ser:
 Vamos dizer que na nossa enquete, a gente divida em dois grupos: Usuários que podem votar na enquete e usuários que podem ver os resultados. Para isso teremos que editar o *init.rb* do nosso plugin para criar essas duas permissões.
 
 ```rb
- permission :view_polls, polls: :index
- permission :vote_polls, polls: :vote
+Redmine::Plugin.register :polls do
+  name 'Polls plugin'
+  author 'Author name'
+  description 'This is a plugin for Redmine'
+  version '0.0.1'
+  url 'http://example.com/path/to/plugin'
+  author_url 'http://example.com/about'
+
+  permission :view_polls, polls: :index
+  permission :vote_polls, polls: :vote
+end
 ```
