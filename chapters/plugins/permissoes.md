@@ -91,9 +91,10 @@ Se vocês repararem na imagem de edição dos papéis, verão que o redmine por 
 
 No nosso caso:
 
-```yml
+```
 pt-BR:
   permission_view_polls: Ver enquetes
   permission_vote_polls: Votar nas enquetes
 ```
 
+![](Screenshot from 2016-01-23 12:59:27.png)
