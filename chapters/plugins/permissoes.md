@@ -46,5 +46,22 @@ Com isso a seguinte opção aparece na edição de papeis e permissões:
 
 Para as permissões valerem para o redmine, é necessário fazer um pequeno ajuste nos controller. Antes de qualquer action é necessário setar um @project para o projeto que o usuário está acessando e chamar o método authorize do redmine.
 
+Poderíamos ter feito da seguinte maneira:
 
+```rb
+class PollsController < ApplicationController
+  unloadable
+  
+  def index
+    @project = Project.find(params[:project_id])
+    authorize
+    @polls = Poll.all
+  end
+end
+```
 
+Porém o Rails fornece um mecanimso de filtro, onde você pode setar métodos para rodarem antes, ao redor ou depois de cada action, essa é uma maneira melhor de resolver o problema pois permite reuzar código para todas as action mantendo o princípio dry.
+
+Para saber mais sobre a API de filtros, basta verificar http://guides.rubyonrails.org/action_controller_overview.html#filters
+
+No nosso caso iremos adcionar um _before_filter_ e dizer para ele chamar o nosso método find_project que vai buscar um projeto 
