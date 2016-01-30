@@ -6,3 +6,4 @@ Quem utilizar esse material para estudo, peço que mande um pull request adicion
 - Julio Nascimento (juliocesarnrocha)
 - Gabriel Rodrigues (gabrieldesar)
 - Felipe Lins Machado (felipelm)
+- Jader Fiegenbaum (jaderfiegenbaum)
